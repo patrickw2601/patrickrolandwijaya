@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200&display=swap');
+
+body {
+  margin: 0
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    height: 60pt;
+    border-radius:5px
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+  font-family: Plus Jakarta Sans;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 24px 26px;
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 18pt;
+    height: 60pt
+  }
+  
+  li a:hover {
+    background-color: white;
+    transition: 0.5s all ease;
+    color: black;
+  }
+  
+  .name {font-size: 20pt;
+        color: white;
+      font-family: Plus Jakarta Sans;
+      float: left;
+      padding: 24px 26px;
+      font-weight: bold}
+  
+  .desktopnav {position: fixed;
+              width: 100%;
+              top: 0;
+              left: 0;
+              z-index: 1;
+              }
+  
+  .container {background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1)), url('sea.jpg');
+              height: 600px;
+              width: 100%}
+
+  #text1,#text2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 96px;
+    color: white;
+    font-family: Impact
+  }
+
+  #aboutMe {
+    background-color: black;
+    height: 700px;
+    margin-bottom: 150px
+  }
+
+  #textone, #texttwo, #textthree, #textfour {
+    text-align: right;
+    font-family: Plus Jakarta Sans;
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px
+  }
+
+  #textone {
+    font-size: 20pt;
+  } 
+
+  #texttwo {
+    font-size: 40pt;
+  } 
+
+  #textthree {
+    font-size: 20pt;
+  } 
+
+  #textfour {
+    font-size: 15pt
+  }
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  #meText {color: black;
+          font-size: 15pt;
+          font-family: Plus Jakarta Sans;
+          }
+  
+  #Resume {margin-top: 250px;
+          margin-bottom: 200px}
+
+  #ResumeTitle {font-family: Plus Jakarta Sans;
+              text-align: right;
+              font-size: 40pt;
+              margin-right: 10%;
+              margin-top: -100px}
+
+  #EduTitle, #Exp {margin-top:50px;
+            font-family: Plus Jakarta Sans;
+          margin-left: 100px;
+          font-size: 40pt}
+  
+  #Education {margin-bottom: 200px}
+  
+#edu, #workexp {margin-left: 100px;
+                  font-family: Plus Jakarta Sans;
+                  font-size: 15pt}
+			
+#workexp {color: white}
+
+#Experiences {background-color: black}
+
+#Exp {color: white}
+
+#filetext {text-align: center;
+          font-family: Plus Jakarta Sans;
+          font-size: 20pt;
+        font-weight: bold}
+
+.revealx{
+  position: relative;
+  transform: translateX(100px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.revealx.active{
+  transform: translateX(0);
+  opacity: 1;
+}
+#sym        {border-radius: 5%;
+          border:solid white 2px}
+
+#sym:hover {border:solid black 2px;
+          transition: 0.5s all ease}
+
+#Contact {background-color: black}
+
+#ctct {color: white;
+      font-family:'Plus Jakarta Sans';
+      text-decoration: none;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto}
+
+#exppart {display: block}
+
+#work {cursor: pointer}
+
+#volunteer {cursor: pointer}
+
+#tab {margin-left: auto; margin-right: auto; display: block}
+
+#modbtn {display: none;
+        margin-top: 50px;
+        width: 50%;
+        font-family: 'Plus Jakarta Sans';
+        font-size: 10pt;
+		text-align: center;
+		margin-left: 25px;
+        background-color: white;
+        border: 1px black solid;
+        border-radius: 5px}
+  
+#modbtn:hover {background-color: black;
+              color: white;
+              transition: 0.5s all ease}
+
+@media screen and (max-width: 1400px) and (min-width: 1000px) {
+  #edu, #workexp {display: none}
+  #logo {width: 60%}
+  #ltab {width: 95%}
+  #list {display: none}
+  .class {display: block}
+  #text1, #text2 {font-size: 75px}
+  #modbtn {display: block}
+  #textone, #texttwo, #textthree, #textfour {text-align: center}
+}
+
+@media screen and (max-width: 999px) {
+  #edu, #workexp {display: none}
+  #logo {width: 80%; margin-left: -10%}
+  #list {display: none}
+  #text1, #text2 {font-size: 50px; }
+  #pic {display: none}
+  #tab {margin-left: 0px}
+  #filetext {font-size: 10pt}
+  #ResumeTitle {margin-right: 0}
+  #phonepic {display:block !important; margin-left: auto; margin-right:auto}
+  #modbtn {display: block; text-align: center}
+  #textone, #texttwo, #textthree, #textfour {text-align: center;}
+    #textone {
+    font-size: 15pt;
+    margin-left: -5%;
+    margin-right: -5%
+  } 
+  #texttwo {
+    font-size: 20pt;
+    margin-left: -5%;
+    margin-right: -5%
+  } 
+  #textthree {
+    font-size: 15pt;
+    margin-left: -5%;
+    margin-right: -5%
+  } 
+  #textfour {
+    font-size: 11pt;
+    margin-left: -5%;
+    margin-right: -5%
+  }
+  #ResumeTitle, #EduTitle, #Exp {font-size: 20pt; text-align: center;margin-left:0}
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 10px;
+  font-family: 'Plus Jakarta Sans';
+}
+
+/* The Close Button */
+.close,.closeTwo, .closeThree, .closeFour, .closeFive, .closeSix {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus,
+.closeTwo:hover,
+.closeTwo:focus,
+.closeThree:hover,
+.closeThree:focus,
+.closeFour:hover,
+.closeFour:focus,
+.closeFive:hover,
+.closeFive:focus,
+.closeSix:hover,
+.closeSix:focus, {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
